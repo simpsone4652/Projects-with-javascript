@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Monsterrat',sans-serif;
+    background-color: rgb(233,233,233);
+    margin-left: -430px;
+    
+}
+.counter-app{
+    position: relative;
+
+}
+.app-body{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.6);
+    overflow: hidden;
+
+}
+.image-section{
+    position: relative;
+    height: 400px;
+    background-image: url('deafult.jpg');
+    background-size: cover;
+    background-position:center;
+
+}
+.settings-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px 30px;
+    font-size: 32px;
+    background-color: #f9f9f9;
+    border:1px solid black;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+    border-radius:5px;
+}
+.settings-btn:hover{
+    color: #f9f9f9;
+    background-color: #333;
+}
+.time-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    background-color: #fff;
+    z-index:100;
+}
+h3{
+    font-size: 23px;
+    text-align: center;
+}
+.time-cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 0;
+    width: 18%;
+    text-align: center;
+    border:1px solid black;
+    border-radius: 9px;
+}
+.number{
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 48px;
+}
+.card-title{
+    text-align: center;
+}
+.settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    padding: 50px 30px;
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    opacity:0;
+    transition: transform .5s,opacity .3s;
+
+
+}
+.active{
+    transform: translateX(430px);
+    opacity:1;
+}
+h1{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+label{
+    margin-bottom: 10px;
+    
+}
+input{
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.date{
+    text-align: center;
+}
+.save{
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
